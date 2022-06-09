@@ -1,7 +1,7 @@
 ---
 layout: page
 title: COVID-19 Detection with COSWARA
-description: 
+description: An acoustics based COVID diagnostic tool
 img:
 importance: 4
 category: work
