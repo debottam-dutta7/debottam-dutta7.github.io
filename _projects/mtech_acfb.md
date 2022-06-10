@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Leaving mel behind
+title: Leaving Mel Behind
 description: A new learnable feature extractor to replace mel filterbank
 img:
 importance: 4
@@ -9,7 +9,7 @@ category: work
 Authors: **Debottam Dutta**; Purvi Agrawal; Sriram Ganapathy  
 Affiliations: Learning and Extraction of Acoustic Patterns (LEAP) Lab, Indian Institute of Science, Bangalore and Microsoft India Development Center, Hyderabad, India
 
-[[Paper]](/assets/pdf/multihead2021.pdf)[[Github]](https://github.com/debottam-dutta7/multiHead_relevanceWeight_audio/tree/master/ASC)
+[[ Paper ]](/assets/pdf/multihead2021.pdf) [[ Github ]](https://github.com/debottam-dutta7/multiHead_relevanceWeight_audio/tree/master/ASC)
 
 
 <div class="row">

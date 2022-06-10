@@ -1,7 +1,7 @@
 ---
 layout: page
 title: COVID-19 Detection with COSWARA
-description: An acoustics based COVID diagnostic tool
+description: An acoustics based COVID-19 diagnostic tool
 img:
 importance: 4
 category: work
@@ -23,4 +23,4 @@ We have developed the COSWARA screening tool which is a web based application th
 <br/> <br/>
 #### The second DiCOVA Challenge
 We successfully conducted The second Diagnosing COVID-19 using Acoustics (DiCOVA2) challenge in October,21. The goal of the challenge was to garner global efforts in building an effective COVID-19 detection tool based on acoustics.   
-[[website]](https://dicovachallenge.github.io/) [[paper]](https://arxiv.org/abs/2110.01177) [[Leaderboard]](https://competitions.codalab.org/competitions/34801#results)
+[[ website ]](https://dicovachallenge.github.io/) [[ paper ]](https://arxiv.org/abs/2110.01177) [[ Leaderboard ]](https://competitions.codalab.org/competitions/34801#results)
