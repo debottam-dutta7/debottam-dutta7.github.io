@@ -4,7 +4,7 @@ date: 2022-06-01
 title: Show and tell paper got accepted at Interspeech2022
 inline: false
 ---
-Show and tell paper got accepted at Interspeech2022. This paper describes a tool, a web-site application designed to enable COVID-19 detection by
+Show and tell paper titled *"Coswara: A website application enabling COVID-19 screening by analysing respiratory sound samples and health symptoms"* got accepted at Interspeech2022. This paper describes a tool, a web-site application designed to enable COVID-19 detection by
 analysing respiratory sound samples and health symptoms. A
 user using this service can log into a website using any device
 connected to the internet, provide current health symptom information and record a few sound samples corresponding
