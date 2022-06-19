@@ -9,7 +9,7 @@ category: work
 Authors: **Debottam Dutta**; Purvi Agrawal; Sriram Ganapathy  
 Affiliations: Learning and Extraction of Acoustic Patterns (LEAP) Lab, Indian Institute of Science, Bangalore and Microsoft India Development Center, Hyderabad, India
 
-[[ Paper ]](/assets/pdf/multihead2021.pdf) [[ Github ]](https://github.com/debottam-dutta7/multiHead_relevanceWeight_audio/tree/master/ASC)
+[[ Paper ]](/assets/pdf/multihead2021.pdf) [[ Github ]](https://github.com/debottam-dutta7/multiHead_relevanceWeight_audio)
 
 
 <div class="row">
