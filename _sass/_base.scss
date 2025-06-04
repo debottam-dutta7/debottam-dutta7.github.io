@@ -2,6 +2,11 @@
  * Styles for the base elements of the theme.
  ******************************************************************************/
 
+html {
+  font-size: 15px; // or your desired size
+}
+
+
 // Typography
 
 p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
@@ -581,4 +586,18 @@ html.transition *:after {
       padding: 8px;
     }
   }
+}
+
+// Newly added styles for the news section
+.news table {
+  font-size: 0.875rem;       // Smaller text
+  line-height: 1.3;          // Tighter line spacing
+  margin-bottom: 0.5rem;
+}
+
+.news table td,
+.news table th {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  vertical-align: top;       // Align text to the top
 }
