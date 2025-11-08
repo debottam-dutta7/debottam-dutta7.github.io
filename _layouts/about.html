@@ -26,6 +26,19 @@ layout: default
               {{ page.profile.address }}
             </div>
             {%- endif %}
+            {%- if page.social %}
+            <!-- Inline social icons under profile image -->
+            <div class="social-top mt-2">
+              <div class="contact-icons">
+                {% include social.html %}
+              </div>
+              {%- if site.contact_note and site.contact_note != '' %}
+              <div class="contact-note d-none d-md-block">
+                {{ site.contact_note }}
+              </div>
+              {%- endif %}
+            </div>
+            {%- endif %}
           </div>
           {%- endif %}
 

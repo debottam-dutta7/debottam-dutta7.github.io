@@ -6,4 +6,4 @@ description:
 nav: true
 nav_order: 1
 ---
-My CV is available [here](/assets/pdf/CV_public_Dec24.pdf)
+My CV is available [here](/assets/pdf/cv_public.pdf)
