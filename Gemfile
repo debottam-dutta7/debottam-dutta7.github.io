@@ -17,8 +17,11 @@ group :jekyll_plugins do
     gem 'mini_racer'
     gem 'unicode_utils'
     gem 'webrick'
-    gem 'sass-embedded', '~> 1.67'       # <-- Add this line
+    gem 'sass-embedded', '~> 1.67'
 end
+
+# Fix for uri gem version conflict
+gem 'uri', '~> 1.0'
 group :other_plugins do
     gem 'httparty'
     gem 'feedjira'
