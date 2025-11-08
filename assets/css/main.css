@@ -78,6 +78,24 @@ body.sticky-bottom-footer {
 .profile img {
   width: 90%;
 }
+.profile .social-top {
+  width: 90%;
+  margin: 0 auto;
+}
+.profile .social-top .contact-icons {
+  display: flex;
+  justify-content: space-between; /* equal spacing across width */
+  align-items: center;
+  gap: 0.5rem;
+  /* Make icons twice as big compared to default inline size */
+}
+.profile .social-top .contact-icons a {
+  flex: 1 1 0; /* distribute evenly */
+  text-align: center;
+}
+.profile .social-top .contact-icons a i::before {
+  font-size: 2rem; /* increase icon size */
+}
 
 /******************************************************************************
  * Publications
