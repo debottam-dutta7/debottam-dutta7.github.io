@@ -3,19 +3,17 @@ layout: page
 permalink: /publications/
 title: Publications
 description:
-years: [2025,2024,2023,2022,2021]
 nav: true
 nav_order: 2
 ---
 <!-- _pages/publications.md -->
 <div class="publications">
 
-  <h3>Preprints</h3>
+  <h3 style="margin-top: 1.2em; margin-bottom: 0.8em; color: #555;">Preprints</h3>
   {% bibliography -f preprints %}
 
-{%- for y in page.years %}
-  <h2 class="year">{{y}}</h2>
-  {% bibliography -f papers -q @*[year={{y}}]* %}
-{% endfor %}
+  <hr style="border: none; border-top: 1px solid #ccc; margin: 1.5em 0;">
+
+  {% bibliography -f papers %}
 
 </div>

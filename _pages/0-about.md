@@ -14,18 +14,18 @@ social: true  # includes social icons at the bottom of the page
 ---
 <div style="text-align: justify"> 
   <p>
-    I am a 4th-year Ph.D. student in Electrical and Computer Engineering at the University of Illinois Urbana-Champaign, advised by
+    I am a Ph.D. student in Electrical and Computer Engineering at the University of Illinois Urbana-Champaign, advised by
     <a href="https://croy.web.engr.illinois.edu/" target="_blank" rel="noopener">Prof. Romit Roy Choudhury</a> in the
     <a href="https://sinrg.csl.illinois.edu/" target="_blank" rel="noopener">Signals and Inference Research Group (SiNRG)</a>.
-    My research centers on <strong>generative and diffusion-based models</strong>, with an emphasis on
-    <strong>compositional generation, controllable synthesis, and robustness</strong>. I explore how diffusion models
+    My research centers on <strong>generative and diffusion-based models</strong> with an emphasis on
+    <strong>compositional generation, controllable synthesis and robustness</strong>. I explore how diffusion models
     represent and combine multiple visual or semantic concepts, and how corrective or guided sampling can improve their
     alignment and reliability.
   </p>
 
  <p>
     Before my Ph.D., I worked as a Research Fellow at the
-    <a href="http://www.leap.ee.iisc.ac.in/" target="_blank" rel="noopener">LEAP Lab</a> at the
+    <a href="http://www.leap.ee.iisc.ac.in/" target="_blank" rel="noopener">LEAP Lab</a> at 
     <a href="https://iisc.ac.in/" target="_blank" rel="noopener">Indian Institute of Science</a>, advised by
     <a href="http://leap.ee.iisc.ac.in/sriram/" target="_blank" rel="noopener">Prof. Sriram Ganapathy</a>, where I studied
     representation learning and interpretability for audio and speech.
