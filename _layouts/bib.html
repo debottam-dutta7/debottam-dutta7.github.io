@@ -89,6 +89,11 @@
           <div class="periodical">
             {{ periodical | strip }}
           </div>
+          {%- if entry.note -%}
+          <div class="periodical">
+            <em>{{ entry.note }}</em>
+          </div>
+          {%- endif -%}
         {%- endif %}
         
           <!-- Links/Buttons -->

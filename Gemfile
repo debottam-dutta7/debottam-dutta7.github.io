@@ -14,7 +14,7 @@ group :jekyll_plugins do
     gem 'jekyll-target-blank'
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
-    gem 'mini_racer'
+    gem 'mini_racer' unless Gem.win_platform?
     gem 'unicode_utils'
     gem 'webrick'
     gem 'sass-embedded', '~> 1.67'
@@ -22,6 +22,10 @@ end
 
 # Fix for uri gem version conflict
 gem 'uri', '~> 1.0'
+# Use a recent Nokogiri so Windows can install a precompiled native gem.
+gem 'nokogiri', '>= 1.16.0'
+# Liquid 4.0.3 crashes on modern Ruby due to removed taint APIs.
+gem 'liquid', '>= 4.0.4'
 group :other_plugins do
     gem 'httparty'
     gem 'feedjira'

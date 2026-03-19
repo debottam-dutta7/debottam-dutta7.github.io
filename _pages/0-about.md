@@ -17,9 +17,8 @@ social: true  # includes social icons at the bottom of the page
     I am a Ph.D. student in Electrical and Computer Engineering at the University of Illinois Urbana-Champaign, advised by
     <a href="https://croy.web.engr.illinois.edu/" target="_blank" rel="noopener">Prof. Romit Roy Choudhury</a> in the
     <a href="https://sinrg.csl.illinois.edu/" target="_blank" rel="noopener">Signals and Inference Research Group (SiNRG)</a>.
-    My research centers on <strong>generative and diffusion-based models</strong> with an emphasis on
-    <strong>compositional generation, controllable synthesis and robustness</strong>. I explore how diffusion models
-    represent and combine multiple visual or semantic concepts, and how corrective or guided sampling can improve their
+    My research centers on generative models(Diffusion, Flows and EBMs) with an emphasis on
+    conditional and efficient generation. Currently I am exploring compositional abilities (the ability to represent and combine multiple semantic concepts) of these models, and how corrective or guided sampling can improve their
     alignment and reliability.
   </p>
 
@@ -29,11 +28,6 @@ social: true  # includes social icons at the bottom of the page
     <a href="https://iisc.ac.in/" target="_blank" rel="noopener">Indian Institute of Science</a>, advised by
     <a href="http://leap.ee.iisc.ac.in/sriram/" target="_blank" rel="noopener">Prof. Sriram Ganapathy</a>, where I studied
     representation learning and interpretability for audio and speech.
-  </p>
-  <p>
-    Across both domains, my broader goal is to develop
-    <strong>robust and controllable generative models</strong> that can compose multiple concepts coherently and generalize
-    across modalities.
   </p>
 </div>
 <br>
