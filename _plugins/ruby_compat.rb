@@ -7,3 +7,21 @@ class << File
     end
   end
 end
+
+# jekyll-minifier 0.1.10 crashes on macOS with Errno::EINTR when the livereload
+# file watcher sends a signal during File.open. Retry up to 3 times.
+Jekyll::Hooks.register :site, :after_init do
+  module Jekyll::Compressor
+    def output_file(dest, content)
+      retries = 0
+      begin
+        FileUtils.mkdir_p(File.dirname(dest))
+        File.open(dest, 'w') { |f| f.write(content) }
+      rescue Errno::EINTR
+        retries += 1
+        retry if retries < 3
+        raise
+      end
+    end
+  end
+end

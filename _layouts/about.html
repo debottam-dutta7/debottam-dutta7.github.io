@@ -50,10 +50,12 @@ layout: default
           <!-- News -->
           {%- include news.html %}
           {%- endif %}
+          {% comment %}
           {% if page.selected_papers -%}
             <!-- Selected papers -->
             {%- include selected_papers.html %}
           {%- endif %}
+          {% endcomment %}
           {%- if page.social %}
           <!-- Social -->
           <div class="social">

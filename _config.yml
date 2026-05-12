@@ -2,6 +2,8 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
+destination: /tmp/al-folio-site  # keep _site off OneDrive to avoid ETIMEDOUT
+
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Debottam
 middle_name: 
@@ -230,7 +232,7 @@ scholar:
 
   query: "@*"
 
-filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website] # Filter out certain bibtex entry keywords used internally from the bib output
+filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, thumbnail] # Filter out certain bibtex entry keywords used internally from the bib output
 
 # -----------------------------------------------------------------------------
 # Responsive WebP Images

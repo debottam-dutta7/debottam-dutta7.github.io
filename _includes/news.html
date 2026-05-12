@@ -1,25 +1,50 @@
-          
+
           <div class="news">
             <h3>News</h3>
-            {% if site.news != blank -%} 
+            {% if site.news != blank -%}
             <div class="table-responsive">
               <table class="table table-sm table-borderless">
-              {%- assign news = site.news | reverse -%} 
-              {% for item in news limit: site.news_limit %} 
+              {%- assign news = site.news | reverse -%}
+              {%- assign news_count = news | size -%}
+              {% for item in news limit: site.news_limit %}
                 <tr>
                   <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
                   <td>
-                    {% if item.inline -%} 
+                    {% if item.inline -%}
                       {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-                    {%- else -%} 
+                    {%- else -%}
                       <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                    {%- endif %} 
+                    {%- endif %}
                   </td>
                 </tr>
-              {%- endfor %} 
+              {%- endfor %}
               </table>
             </div>
-          {%- else -%} 
+            {%- if news_count > site.news_limit -%}
+            <div class="news-more" id="news-more-rows">
+              <div class="table-responsive">
+                <table class="table table-sm table-borderless">
+                {%- assign news_offset = site.news_limit -%}
+                {% for item in news offset: news_offset %}
+                  <tr>
+                    <th scope="row">{{ item.date | date: "%b %-d, %Y" }}</th>
+                    <td>
+                      {% if item.inline -%}
+                        {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                      {%- else -%}
+                        <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                      {%- endif %}
+                    </td>
+                  </tr>
+                {%- endfor %}
+                </table>
+              </div>
+            </div>
+            <a class="news-toggle" id="news-toggle" role="button">
+              show more <i class="fas fa-chevron-down"></i>
+            </a>
+            {%- endif %}
+          {%- else -%}
             <p>No news so far...</p>
-          {%- endif %} 
+          {%- endif %}
           </div>
