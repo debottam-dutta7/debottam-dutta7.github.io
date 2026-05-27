@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://debottam-dutta7.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://debottam-dutta7.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-05-12T09:54:33+00:00</updated><id>https://debottam-dutta7.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://debottam-dutta7.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://debottam-dutta7.github.io/" rel="alternate" type="text/html" hreflang="en" /><updated>2026-05-27T01:22:04+00:00</updated><id>https://debottam-dutta7.github.io/feed.xml</id><title type="html">blank</title><subtitle>A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 </subtitle><entry><title type="html">Displaying External Posts on Your al-folio Blog</title><link href="https://debottam-dutta7.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog/" rel="alternate" type="text/html" title="Displaying External Posts on Your al-folio Blog" /><published>2022-04-23T23:20:09+00:00</published><updated>2022-04-23T23:20:09+00:00</updated><id>https://debottam-dutta7.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog</id><content type="html" xml:base="https://debottam-dutta7.github.io/blog/2022/displaying-external-posts-on-your-al-folio-blog/"><![CDATA[]]></content><author><name></name></author></entry><entry><title type="html">a post with diagrams</title><link href="https://debottam-dutta7.github.io/blog/2021/diagrams/" rel="alternate" type="text/html" title="a post with diagrams" /><published>2021-07-04T17:39:00+00:00</published><updated>2021-07-04T17:39:00+00:00</updated><id>https://debottam-dutta7.github.io/blog/2021/diagrams</id><content type="html" xml:base="https://debottam-dutta7.github.io/blog/2021/diagrams/"><![CDATA[<p>This theme supports generating various diagrams from a text description using <a href="https://github.com/zhustec/jekyll-diagrams" target="\_blank">jekyll-diagrams</a> plugin.
 Below, we generate a few examples of such diagrams using languages such as <a href="https://mermaid-js.github.io/mermaid/" target="\_blank">mermaid</a>, <a href="https://plantuml.com/" target="\_blank">plantuml</a>, <a href="https://vega.github.io/vega-lite/" target="\_blank">vega-lite</a>, etc.</p>
 
@@ -391,9 +391,8 @@ Produces something like this:</p>
         <figure>
 
   <picture>
-    <source media="(max-width: 300px)" srcset="/assets/img/9-300.webp" />
-    <source media="(max-width: 400px)" srcset="/assets/img/9-400.webp" />
-    <source media="(max-width: 700px)" srcset="/assets/img/9-700.webp" />
+    
+
     <!-- Fallback to the original file -->
     <img class="img-fluid rounded z-depth-1" src="/assets/img/9.jpg" />
 
@@ -406,9 +405,8 @@ Produces something like this:</p>
         <figure>
 
   <picture>
-    <source media="(max-width: 300px)" srcset="/assets/img/7-300.webp" />
-    <source media="(max-width: 400px)" srcset="/assets/img/7-400.webp" />
-    <source media="(max-width: 700px)" srcset="/assets/img/7-700.webp" />
+    
+
     <!-- Fallback to the original file -->
     <img class="img-fluid rounded z-depth-1" src="/assets/img/7.jpg" />
 
@@ -430,9 +428,8 @@ Simply add <code class="language-plaintext highlighter-rouge">data-zoomable</cod
         <figure>
 
   <picture>
-    <source media="(max-width: 300px)" srcset="/assets/img/8-300.webp" />
-    <source media="(max-width: 400px)" srcset="/assets/img/8-400.webp" />
-    <source media="(max-width: 700px)" srcset="/assets/img/8-700.webp" />
+    
+
     <!-- Fallback to the original file -->
     <img class="img-fluid rounded z-depth-1" src="/assets/img/8.jpg" data-zoomable="" />
 
@@ -445,9 +442,8 @@ Simply add <code class="language-plaintext highlighter-rouge">data-zoomable</cod
         <figure>
 
   <picture>
-    <source media="(max-width: 300px)" srcset="/assets/img/10-300.webp" />
-    <source media="(max-width: 400px)" srcset="/assets/img/10-400.webp" />
-    <source media="(max-width: 700px)" srcset="/assets/img/10-700.webp" />
+    
+
     <!-- Fallback to the original file -->
     <img class="img-fluid rounded z-depth-1" src="/assets/img/10.jpg" data-zoomable="" />
 
@@ -465,9 +461,8 @@ Simply add <code class="language-plaintext highlighter-rouge">data-zoomable</cod
         <figure>
 
   <picture>
-    <source media="(max-width: 300px)" srcset="/assets/img/11-300.webp" />
-    <source media="(max-width: 400px)" srcset="/assets/img/11-400.webp" />
-    <source media="(max-width: 700px)" srcset="/assets/img/11-700.webp" />
+    
+
     <!-- Fallback to the original file -->
     <img class="img-fluid rounded z-depth-1" src="/assets/img/11.jpg" data-zoomable="" />
 
@@ -480,9 +475,8 @@ Simply add <code class="language-plaintext highlighter-rouge">data-zoomable</cod
         <figure>
 
   <picture>
-    <source media="(max-width: 300px)" srcset="/assets/img/12-300.webp" />
-    <source media="(max-width: 400px)" srcset="/assets/img/12-400.webp" />
-    <source media="(max-width: 700px)" srcset="/assets/img/12-700.webp" />
+    
+
     <!-- Fallback to the original file -->
     <img class="img-fluid rounded z-depth-1" src="/assets/img/12.jpg" data-zoomable="" />
 
@@ -495,9 +489,8 @@ Simply add <code class="language-plaintext highlighter-rouge">data-zoomable</cod
         <figure>
 
   <picture>
-    <source media="(max-width: 300px)" srcset="/assets/img/7-300.webp" />
-    <source media="(max-width: 400px)" srcset="/assets/img/7-400.webp" />
-    <source media="(max-width: 700px)" srcset="/assets/img/7-700.webp" />
+    
+
     <!-- Fallback to the original file -->
     <img class="img-fluid rounded z-depth-1" src="/assets/img/7.jpg" data-zoomable="" />
 
