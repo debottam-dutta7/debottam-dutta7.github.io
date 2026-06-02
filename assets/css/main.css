@@ -304,10 +304,28 @@ blockquote {
   font-size: 1.7rem;
 }
 .navbar.navbar-light .navbar-brand.social a i::before {
-  color: var(--global-text-color);
+  color: var(--global-theme-color);
   transition-property: all 0.2s ease-in-out;
 }
 .navbar.navbar-light .navbar-brand.social a:hover i::before {
+  color: var(--global-hover-color);
+}
+.navbar.navbar-light .navbar-social-icons {
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+.navbar.navbar-light .navbar-social-icons .contact-icons {
+  font-size: 1.1rem;
+}
+.navbar.navbar-light .navbar-social-icons .contact-icons a {
+  margin: 0 0.3rem;
+}
+.navbar.navbar-light .navbar-social-icons .contact-icons a i::before {
+  color: var(--global-text-color);
+  transition-property: all 0.2s ease-in-out;
+}
+.navbar.navbar-light .navbar-social-icons .contact-icons a:hover i::before {
   color: var(--global-theme-color);
 }
 
@@ -349,7 +367,7 @@ blockquote {
   font-size: 4rem;
 }
 .social .contact-icons a i::before {
-  color: var(--global-text-color);
+  color: var(--global-theme-color);
   transition-property: all 0.2s ease-in-out;
 }
 .social .contact-icons a:hover i::before {
@@ -497,6 +515,15 @@ footer.sticky-bottom {
   margin-bottom: -2rem;
   text-align: right;
 }
+.publications h2.pub-category {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--global-text-color-light);
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-bottom: 0.3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
 .publications ol.bibliography {
   list-style: none;
   padding: 0;
@@ -504,11 +531,11 @@ footer.sticky-bottom {
 }
 .publications ol.bibliography li {
   margin-bottom: 0.6rem;
-  background-color: var(--global-bg-color);
-  border: 1px solid var(--global-divider-color);
-  border-radius: 8px;
-  padding: 0.6rem 0.75rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0.6rem 0;
+  box-shadow: none;
   font-size: 0.9rem;
 }
 .publications ol.bibliography li .abbr {
@@ -712,16 +739,8 @@ html.transition *:after {
   vertical-align: top;
 }
 
-.news-more {
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.3s ease;
-}
-.news-more.open {
-  max-height: 1000px;
-}
-.news-more .table-responsive {
-  margin-top: -0.5rem;
+tr.news-extra-row {
+  display: none;
 }
 
 a.news-toggle {
@@ -742,6 +761,38 @@ a.news-toggle i {
 }
 a.news-toggle.open i {
   transform: rotate(180deg);
+}
+
+.simple-bibliography ol.bibliography li {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0.15rem 0;
+  margin-bottom: 0.4rem;
+}
+
+.simple-bib-entry {
+  margin-bottom: 0.9rem;
+}
+.simple-bib-entry .simple-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #444;
+}
+.simple-bib-entry .author {
+  font-size: 0.875rem;
+  color: var(--global-text-color-light);
+}
+.simple-bib-entry .periodical {
+  font-size: 0.85rem;
+  color: var(--global-text-color-light);
+}
+.simple-bib-entry .self-author {
+  text-decoration: underline;
+}
+.simple-bib-entry .links {
+  margin-top: 0.15rem;
 }
 
 /*******************************************************************************
