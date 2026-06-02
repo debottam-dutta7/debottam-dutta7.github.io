@@ -1,0 +1,72 @@
+---
+---
+<div class="row simple-bib-entry">
+  <div class="col-sm-12">
+
+    <!-- Title -->
+    <div class="title simple-title">{{entry.title}}</div>
+
+    <!-- Authors -->
+    <div class="author">
+    {%- for author in entry.author_array -%}
+      {%- assign author_is_self = false -%}
+      {%- if author.last == site.scholar.last_name -%}
+        {%- if site.scholar.first_name contains author.first -%}
+          {%- assign author_is_self = true -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- if forloop.length == 1 -%}
+        {%- if author_is_self -%}
+          <span class="self-author">{{author.first}} {{author.last}}</span>
+        {%- else -%}
+          {{author.first}} {{author.last}}
+        {%- endif -%}
+      {%- else -%}
+        {%- unless forloop.last -%}
+          {%- if author_is_self -%}
+            <span class="self-author">{{author.first}} {{author.last}}</span>,&nbsp;
+          {%- else -%}
+            {{author.first}} {{author.last}},&nbsp;
+          {%- endif -%}
+        {%- else -%}
+          {%- if author_is_self -%}
+            and <span class="self-author">{{author.first}} {{author.last}}</span>
+          {%- else -%}
+            and {{author.first}} {{author.last}}
+          {%- endif -%}
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endfor %}
+    </div>
+
+    <!-- Venue -->
+    {%- if entry.type == "article" -%}
+      {%- capture entrytype -%}<em>{{entry.journal}}</em>{%- endcapture -%}
+    {%- elsif entry.type == "inproceedings" -%}
+      {%- capture entrytype -%}<em>{{entry.booktitle}}</em>{%- endcapture -%}
+    {%- else -%}
+      {%- capture entrytype -%}{%- endcapture -%}
+    {%- endif -%}
+    {%- unless entry.note -%}
+      {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%}
+    {%- endunless -%}
+    <div class="periodical">
+      {{ entrytype }}{{ entryyear | strip }}
+    </div>
+    {%- if entry.note -%}
+    <div class="periodical"><em>{{ entry.note }}</em></div>
+    {%- endif -%}
+
+    <!-- Links -->
+    <div class="links">
+      {%- if entry.pdf %}
+        {% if entry.pdf contains '://' -%}
+        <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+        {%- else -%}
+        <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+        {%- endif %}
+      {%- endif %}
+    </div>
+
+  </div>
+</div>

@@ -7,10 +7,20 @@ $(document).ready(function() {
     });
     $('.navbar-nav').find('a').removeClass('waves-effect waves-light');
 
+    // Lock date column width so it doesn't shift when extra rows are revealed
+    var $newsTable = $('.news table');
+    if ($newsTable.length) {
+        var dateColWidth = $newsTable.find('th').first().width();
+        $newsTable.find('th').css('min-width', dateColWidth + 'px');
+    }
+
     $('#news-toggle').click(function() {
-        var $more = $('#news-more-rows');
-        var expanded = $more.hasClass('open');
-        $more.toggleClass('open');
+        var expanded = $(this).hasClass('open');
+        if (expanded) {
+            $('.news-extra-row').css('display', 'none');
+        } else {
+            $('.news-extra-row').css('display', 'table-row');
+        }
         $(this).toggleClass('open');
         $(this).html(expanded
             ? 'show more <i class="fas fa-chevron-down"></i>'

@@ -26,8 +26,8 @@ layout: default
               {{ page.profile.address }}
             </div>
             {%- endif %}
+            {% comment %}SOCIAL-UNDER-PROFILE: commented out — icons moved to navbar
             {%- if page.social %}
-            <!-- Inline social icons under profile image -->
             <div class="social-top mt-2">
               <div class="contact-icons">
                 {% include social.html %}
@@ -39,6 +39,7 @@ layout: default
               {%- endif %}
             </div>
             {%- endif %}
+            {% endcomment %}
           </div>
           {%- endif %}
 
@@ -66,7 +67,7 @@ layout: default
             <div class="contact-note">
               {{ site.contact_note }}
             </div>
-            
+
           </div>
           {%- endif %}
         </article>
