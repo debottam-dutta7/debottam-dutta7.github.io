@@ -589,6 +589,9 @@ footer.sticky-bottom {
 .publications ol.bibliography li .title abbr.badge a:hover {
   text-decoration: none;
 }
+.publications ol.bibliography li .author {
+  color: var(--global-text-color-light);
+}
 .publications ol.bibliography li .author a {
   border-bottom: 1px dashed var(--global-theme-color);
 }
