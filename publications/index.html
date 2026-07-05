@@ -29,7 +29,7 @@
 
     <!-- Styles -->
     
-    <link rel="stylesheet" href="/assets/css/main.css?v=1782046928">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1783220599">
     <link rel="canonical" href="https://debottam-dutta7.github.io/publications/">
     
     <!-- Dark Mode -->
@@ -106,12 +106,12 @@
 <!-- _layouts/bib.html -->
       <div class="row">
         <!-- Thumbnail -->
-        <div class="col-sm-3 paper-thumb">
+        <div class="col-sm-4 paper-thumb">
           <img src="/assets/img/paper_thumbs/tilt.png" alt="TILT: Test-Time Reward Alignment via Distribution Tilting for Compositional Generation" class="paper-thumbnail">
         </div>
 
         <!-- Entry bib key -->
-        <div id="dutta2026tilt" class="col-sm-9">
+        <div id="dutta2026tilt" class="col-sm-8">
         
           <!-- Title -->
           <div class="title">
@@ -122,14 +122,18 @@
                   <em>Debottam Dutta</em>, Jaehoon Hahm, Jianchong Chen, and Romit Roy Choudhury
           </div>
 
-          <!-- Journal/Book title and date -->
-          <div class="periodical">
+          <!-- Journal/Book title and date --><div class="periodical">
             <em>In ICML 2026 Workshop on Structured Probabilistic Inference &amp; Generative Modeling (SPIGM)</em> 2026
           </div>
         
           <!-- Links/Buttons -->
           <div class="links">
             <a href="https://sinrg.csl.illinois.edu/papers/tilt_workshop_2026.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+          </div>
+
+          <!-- tl;dr (always visible) -->
+          <div class="tldr">
+            <p><strong>tl;dr:</strong> <span class="hl">We introduce</span> TILT, a training-free framework that improves compositional text-to-image generation by framing it as a test-time reward alignment problem. Rather than relying on external reward models, we define a "pure-mode" intrinsic reward that favors samples where all concepts are jointly present and show that the reward maximizes Conditional Total Correlation in principle.</p>
           </div>
 
           
@@ -140,12 +144,12 @@
 <!-- _layouts/bib.html -->
       <div class="row">
         <!-- Thumbnail -->
-        <div class="col-sm-3 paper-thumb">
+        <div class="col-sm-4 paper-thumb">
           <img src="/assets/img/paper_thumbs/co3_thumb.png" alt="Steer Away From Mode Collisions: Improving Composition In Diffusion Models" class="paper-thumbnail">
         </div>
 
         <!-- Entry bib key -->
-        <div id="dutta2026steerawaymodecollisions" class="col-sm-9">
+        <div id="dutta2026steerawaymodecollisions" class="col-sm-8">
         
           <!-- Title -->
           <div class="title">
@@ -156,12 +160,11 @@
                   <em>Debottam Dutta</em>, Jianchong Chen, Rajalaxmi Rajagopalan, Yu-Lin Wei, and Romit Roy Choudhury
           </div>
 
-          <!-- Journal/Book title and date -->
-          <div class="periodical">
-            2026
+          <!-- Journal/Book title and date --><div class="periodical">
+            
           </div>
 <div class="periodical">
-            <em>ICLR 2026</em>
+            <em>ICLR, 2026</em>
           </div>
         
           <!-- Links/Buttons -->
@@ -169,6 +172,11 @@
             <a href="https://arxiv.org/abs/2509.25940" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
             <a href="https://github.com/debottam-dutta7/co3" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Code</a>
             <a href="https://debottam-dutta7.github.io/co3_web/" class="btn btn-sm z-depth-0" role="button">Website</a>
+          </div>
+
+          <!-- tl;dr (always visible) -->
+          <div class="tldr">
+            <p><strong>tl;dr:</strong> While text-to-image models can generate stunning visuals, they frequently fail at multi-concept prompts by dropping or overshadowing weaker elements. <span class="hl">We hypothesize</span> this happens because the joint probability distribution overlaps too heavily with single-concept distributions, pulling the generation toward a dominant concept. To resolve this without retraining, our Concept-Contrasting Corrector (CO3) steers sampling away from these overlapping areas and toward "pure" modes where all concepts achieve a balanced visual presence.</p>
           </div>
 
           
@@ -179,12 +187,12 @@
 <!-- _layouts/bib.html -->
       <div class="row">
         <!-- Thumbnail -->
-        <div class="col-sm-3 paper-thumb">
+        <div class="col-sm-4 paper-thumb">
           <img src="/assets/img/paper_thumbs/multibo.png" alt="Personalized Image Generation via Human-in-the-loop Bayesian Optimization" class="paper-thumbnail">
         </div>
 
         <!-- Entry bib key -->
-        <div id="rajagopalan2026personalizedimagegenerationhumanintheloop" class="col-sm-9">
+        <div id="rajagopalan2026personalizedimagegenerationhumanintheloop" class="col-sm-8">
         
           <!-- Title -->
           <div class="title">
@@ -195,18 +203,22 @@
                   <em>Debottam Dutta</em>, Yu-Lin Wei, and Romit Roy Choudhury
           </div>
 
-          <!-- Journal/Book title and date -->
-          <div class="periodical">
-            2026
+          <!-- Journal/Book title and date --><div class="periodical">
+            
           </div>
 <div class="periodical">
-            <em>ICML 2026</em>
+            <em>ICML, 2026</em>
           </div>
         
           <!-- Links/Buttons -->
           <div class="links">
             <a href="https://arxiv.org/abs/2602.02388" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
             <a href="https://annonanom125.github.io/annonAnomrepo/" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">Website</a>
+          </div>
+
+          <!-- tl;dr (always visible) -->
+          <div class="tldr">
+            <p><strong>tl;dr:</strong> MultiBO enables precise image personalization via human-in-the-loop Bayesian optimization. It narrows the generation gap <span class="hl">by observing that</span> even when language-based prompting reaches its limits, humans can still visually identify if a new image x^+ is closer to their imagined target x^* than previous attempts. Iterative multi-choice user feedback is then used to guide the diffusion model to the exact desired image without retraining.</p>
           </div>
 
           
@@ -217,12 +229,12 @@
 <!-- _layouts/bib.html -->
       <div class="row">
         <!-- Thumbnail -->
-        <div class="col-sm-3 paper-thumb">
+        <div class="col-sm-4 paper-thumb">
           <img src="/assets/img/paper_thumbs/evalp.png" alt="Learning Energy-based Variational Latent Prior for VAEs" class="paper-thumbnail">
         </div>
 
         <!-- Entry bib key -->
-        <div id="dutta2025evalp" class="col-sm-9">
+        <div id="dutta2025evalp" class="col-sm-8">
         
           <!-- Title -->
           <div class="title">
@@ -233,14 +245,21 @@
                   <em>Debottam Dutta</em>, Chaitanya Amballa, Zhongweiyang Xu, Yu-Lin Wei, and Romit Roy Choudhury
           </div>
 
-          <!-- Journal/Book title and date -->
-          <div class="periodical">
-            2025
+          <!-- Journal/Book title and date --><div class="periodical">
+            
+          </div>
+<div class="periodical">
+            <em>arXiv, 2025</em>
           </div>
         
           <!-- Links/Buttons -->
           <div class="links">
             <a href="https://arxiv.org/pdf/2510.00260" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+          </div>
+
+          <!-- tl;dr (always visible) -->
+          <div class="tldr">
+            <p><strong>tl;dr:</strong> To tackle the fundamental "prior hole" problem that severely degrades VAE generation quality, <span class="hl">we introduce</span> EVaLP, a flexible energy-based prior designed to tightly align with the aggregate posterior. <span class="hl">Our key insight</span> is utilizing a variational sampler network to approximate the log-normalization constant, which effectively bypasses computationally expensive MCMC sampling methods. By successfully bridging this prior-posterior mismatch, our approach enables both stable model training and fast, high-quality sample generation.</p>
           </div>
 
           
@@ -251,12 +270,12 @@
 <!-- _layouts/bib.html -->
       <div class="row">
         <!-- Thumbnail -->
-        <div class="col-sm-3 paper-thumb">
+        <div class="col-sm-4 paper-thumb">
           <img src="/assets/img/paper_thumbs/mdlm.png" alt="Multi-Source Music Generation with Latent Diffusion" class="paper-thumbnail">
         </div>
 
         <!-- Entry bib key -->
-        <div id="xu2024multisource" class="col-sm-9">
+        <div id="xu2024multisource" class="col-sm-8">
         
           <!-- Title -->
           <div class="title">
@@ -267,14 +286,18 @@
                   <em>Debottam Dutta</em>, Yu-Lin Wei, and Romit Roy Choudhury
           </div>
 
-          <!-- Journal/Book title and date -->
-          <div class="periodical">
+          <!-- Journal/Book title and date --><div class="periodical">
             <em>In Audio Imagination: NeurIPS 2024 Workshop AI-Driven Speech, Music, and Sound Generation</em> 2024
           </div>
         
           <!-- Links/Buttons -->
           <div class="links">
             <a href="https://openreview.net/pdf/740a8c1a4bcef94c3ad6e58c52336c6703883ce2.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
+          </div>
+
+          <!-- tl;dr (always visible) -->
+          <div class="tldr">
+            <p><strong>tl;dr:</strong> <span class="hl">We introduce</span> the Multi-Source Latent Diffusion Model (MSLDM) to resolve the noisy artifacts and poor melodies of waveform-level models by compressing individual instrumental sources into distinct VAE latents. <span class="hl">Our key insight</span> is that training a diffusion model on these concatenated "source latents" captures inter-source harmony significantly better than modeling whole music mixtures, leveraging this compression and noise-robustness to enable highly flexible, high-quality total and partial generation of mutually coherent tracks.</p>
           </div>
 
           
@@ -285,12 +308,12 @@
 <!-- _layouts/bib.html -->
       <div class="row">
         <!-- Thumbnail -->
-        <div class="col-sm-3 paper-thumb">
+        <div class="col-sm-4 paper-thumb">
           <img src="/assets/img/paper_thumbs/cglmc.png" alt="Estimating Multi-chirp Parameters using Curvature-guided Langevin Monte Carlo" class="paper-thumbnail">
         </div>
 
         <!-- Entry bib key -->
-        <div id="10888413" class="col-sm-9">
+        <div id="10888413" class="col-sm-8">
         
           <!-- Title -->
           <div class="title">
@@ -301,8 +324,7 @@
                   <em>Debottam Dutta</em>, Yu-Lin Wei, and Romit Roy Choudhury
           </div>
 
-          <!-- Journal/Book title and date -->
-          <div class="periodical">
+          <!-- Journal/Book title and date --><div class="periodical">
             <em>In ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em> 2025
           </div>
         
@@ -311,13 +333,18 @@
             <a href="https://arxiv.org/pdf/2501.18178" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">PDF</a>
           </div>
 
+          <!-- tl;dr (always visible) -->
+          <div class="tldr">
+            <p><strong>tl;dr:</strong> Estimating higher-order multi-chirp parameters in low signal-to-noise environments is a challenging non-convex optimization problem where standard samplers frequently fail to reliably converge. To address this, <span class="hl">we proposed</span> a Curvature-guided Langevin Monte Carlo (CG-LMC) algorithm that adaptively tunes Gaussian smoothing using the objective function’s average curvature to reliably reach the optimal solution.</p>
+          </div>
+
           
         </div>
       </div>
 </li>
 </ol>
 
-  <h2 class="pub-category">Speech/Audio Processing and Digital Health (Earlier Work)</h2>
+  <h2 class="pub-category">Speech/Audio Processing and Digital Health</h2>
   <div class="simple-bibliography">
     <ol class="bibliography">
 <li>
