@@ -13,7 +13,8 @@
   pdf={https://sinrg.csl.illinois.edu/papers/tilt_workshop_2026.pdf},
   selected={true},
   thumbnail={tilt.png},
-  category={Generative Modeling and Sampling}
+  category={Generative Modeling and Sampling},
+  tldr={<span class="hl">We introduce</span> TILT, a training-free framework that improves compositional text-to-image generation by framing it as a test-time reward alignment problem. Rather than relying on external reward models, we define a "pure-mode" intrinsic reward that favors samples where all concepts are jointly present and show that the reward maximizes Conditional Total Correlation in principle.}
 }
 
 @misc{dutta2026steerawaymodecollisions,
@@ -21,7 +22,7 @@
       title={Steer Away From Mode Collisions: Improving Composition In Diffusion Models},
       author={Debottam Dutta and Jianchong Chen and Rajalaxmi Rajagopalan and Yu-Lin Wei and Romit Roy Choudhury},
       year={2026},
-      note={ICLR 2026},
+      note={ICLR, 2026},
       eprint={2509.25940},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
@@ -31,7 +32,8 @@
       website={https://debottam-dutta7.github.io/co3_web/},
       selected = {true},
       thumbnail = {co3_thumb.png},
-      category={Generative Modeling and Sampling}
+      category={Generative Modeling and Sampling},
+      tldr={While text-to-image models can generate stunning visuals, they frequently fail at multi-concept prompts by dropping or overshadowing weaker elements. <span class="hl">We hypothesize</span> this happens because the joint probability distribution overlaps too heavily with single-concept distributions, pulling the generation toward a dominant concept. To resolve this without retraining, our Concept-Contrasting Corrector (CO3) steers sampling away from these overlapping areas and toward "pure" modes where all concepts achieve a balanced visual presence.}
 }
 
 @misc{rajagopalan2026personalizedimagegenerationhumanintheloop,
@@ -39,7 +41,7 @@
       title={Personalized Image Generation via Human-in-the-loop Bayesian Optimization},
       author={Rajalaxmi Rajagopalan and Debottam Dutta and Yu-Lin Wei and Romit Roy Choudhury},
       year={2026},
-      note={ICML 2026},
+      note={ICML, 2026},
       eprint={2602.02388},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
@@ -48,13 +50,15 @@
       website={https://annonanom125.github.io/annonAnomrepo/},
       selected = {true},
       thumbnail = {multibo.png},
-      category={Generative Modeling and Sampling}
+      category={Generative Modeling and Sampling},
+      tldr={MultiBO enables precise image personalization via human-in-the-loop Bayesian optimization. It narrows the generation gap <span class="hl">by observing that</span> even when language-based prompting reaches its limits, humans can still visually identify if a new image $x^+$ is closer to their imagined target $x^*$ than previous attempts. Iterative multi-choice user feedback is then used to guide the diffusion model to the exact desired image without retraining.}
 }
 
 @misc{dutta2025evalp,
   title={Learning Energy-based Variational Latent Prior for VAEs},
   author={Debottam Dutta and Chaitanya Amballa and Zhongweiyang Xu and Yu-Lin Wei and Romit Roy Choudhury},
   year={2025},
+  note={arXiv, 2025},
   eprint={2510.00260},
   archivePrefix={arXiv},
   primaryClass={cs.LG},
@@ -63,7 +67,8 @@
   pdf={https://arxiv.org/pdf/2510.00260},
   url={https://arxiv.org/abs/2510.00260},
   thumbnail = {evalp.png},
-  category={Generative Modeling and Sampling}
+  category={Generative Modeling and Sampling},
+  tldr={To tackle the fundamental "prior hole" problem that severely degrades VAE generation quality, <span class="hl">we introduce</span> EVaLP, a flexible energy-based prior designed to tightly align with the aggregate posterior. <span class="hl">Our key insight</span> is utilizing a variational sampler network to approximate the log-normalization constant, which effectively bypasses computationally expensive MCMC sampling methods. By successfully bridging this prior-posterior mismatch, our approach enables both stable model training and fast, high-quality sample generation.}
 }
 
 @inproceedings{xu2024multisource,
@@ -76,7 +81,8 @@
   selected = {true},
   pdf = {https://openreview.net/pdf/740a8c1a4bcef94c3ad6e58c52336c6703883ce2.pdf},
   thumbnail = {mdlm.png},
-  category={Generative Modeling and Sampling}
+  category={Generative Modeling and Sampling},
+  tldr={<span class="hl">We introduce</span> the Multi-Source Latent Diffusion Model (MSLDM) to resolve the noisy artifacts and poor melodies of waveform-level models by compressing individual instrumental sources into distinct VAE latents. <span class="hl">Our key insight</span> is that training a diffusion model on these concatenated "source latents" captures inter-source harmony significantly better than modeling whole music mixtures, leveraging this compression and noise-robustness to enable highly flexible, high-quality total and partial generation of mutually coherent tracks.}
 }
 
 @INPROCEEDINGS{10888413,
@@ -93,7 +99,8 @@
   selected = {false},
   pdf={https://arxiv.org/pdf/2501.18178},
   thumbnail = {cglmc.png},
-  category={Generative Modeling and Sampling}
+  category={Generative Modeling and Sampling},
+  tldr={Estimating higher-order multi-chirp parameters in low signal-to-noise environments is a challenging non-convex optimization problem where standard samplers frequently fail to reliably converge. To address this, <span class="hl">we proposed</span> a Curvature-guided Langevin Monte Carlo (CG-LMC) algorithm that adaptively tunes Gaussian smoothing using the objective function's average curvature to reliably reach the optimal solution.}
   }
 
 @ARTICLE{10261213,

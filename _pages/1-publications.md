@@ -12,7 +12,7 @@ nav_order: 2
   <h2 class="pub-category">Generative Modeling and Sampling</h2>
   {% bibliography -f papers -q @*[category=Generative Modeling and Sampling]* %}
 
-  <h2 class="pub-category">Speech/Audio Processing and Digital Health (Earlier Work)</h2>
+  <h2 class="pub-category">Speech/Audio Processing and Digital Health</h2>
   <div class="simple-bibliography">
     {% bibliography -f papers -q @*[category=Speech/Audio Processing and Digital Health (Earlier Work)]* --template bib_simple %}
   </div>
