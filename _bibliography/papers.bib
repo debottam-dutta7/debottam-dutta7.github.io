@@ -18,7 +18,7 @@
   selected={false},
   thumbnail={thumb_pushf.png},
   category={Generative Modeling and Sampling},
-  tldr={We present TILT (Test-time model-Intrinsic reward aLignment via Tilting), a training-free framework that <span class="hl">poses composition in diffusion as an intrinsic reward alignment problem</span>. The reward is <span class="hl">modality agnostic</span>: the same reward works across modalities such as image and audio, obviating the need for externally trained reward models. It also yields a closed-form target under a variational approximation, realizable through standard diffusion sampling, and is interpretable, making it amenable to preference-based modifications.}
+  tldr={We present TILT (Test-time model-Intrinsic reward aLignment via Tilting), a training-free framework that <span class="hl">poses composition in diffusion as an intrinsic reward alignment problem</span>. The reward is defined purely in distribution space and is thus <span class="hl">modality agnostic</span>: the same reward works across modalities such as image and audio, obviating the need for externally trained reward models. It also yields a closed-form target under a variational approximation, realizable through standard diffusion sampling, and is interpretable, making it amenable to preference-based modifications.}
 }
 
 @inproceedings{dutta2026can,
@@ -33,7 +33,7 @@
   selected={true},
   thumbnail={tilt.png},
   category={Generative Modeling and Sampling},
-  tldr={External reward models used to steer text-to-image generation are not tailored to what the generator has learned. <span class="hl">We ask</span>: can a model that composes poorly tell apart its own good and bad samples, and can that model-intrinsic signal steer it away from compositional failures?}
+  tldr={External rewards used to guide text-to-image generation are not tailored to what the generator has learned. <span class="hl">We ask</span>: can a model that composes poorly tell apart its good and bad samples, and can that model-intrinsic signal help it avoid compositional failures?}
 }
 
 @misc{dutta2026steerawaymodecollisions,
@@ -52,7 +52,7 @@
       selected = {true},
       thumbnail = {co3_thumb.png},
       category={Generative Modeling and Sampling},
-      tldr={While text-to-image models can generate stunning visuals, they frequently fail at multi-concept prompts by dropping or overshadowing weaker elements. <span class="hl">We hypothesize</span> this happens because the joint probability distribution overlaps too heavily with single-concept distributions, pulling the generation toward a dominant concept. To resolve this without retraining, our Concept-Contrasting Corrector (CO3) steers sampling away from these overlapping areas and toward "pure" modes where all concepts achieve a balanced visual presence.}
+      tldr={While text-to-image models can generate stunning visuals, they frequently fail at multi-concept prompts by dropping or overshadowing weaker elements. <span class="hl">We hypothesize</span> this happens because the joint probability distribution overlaps too heavily with single-concept distributions, pulling generation toward a dominant concept. To resolve this without retraining, our Concept-Contrasting Corrector (CO3) steers sampling away from overlapping areas and toward "pure" modes where all concepts achieve a balanced visual presence.}
 }
 
 @misc{rajagopalan2026personalizedimagegenerationhumanintheloop,
