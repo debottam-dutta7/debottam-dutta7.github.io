@@ -3,19 +3,37 @@
 
 @string{aps = {American Physical Society,}}
 
-@inproceedings{dutta2026tilt,
+@misc{dutta2026tiltpreprint,
+  abbr={Preprint},
+  title={TILT: Model-Intrinsic Reward Alignment For Compositional Diffusion},
+  author={Debottam Dutta and Jianchong Chen and Jaehoon Hahm and Romit Roy Choudhury},
+  year={2026},
+  note={arXiv, 2026},
+  eprint={2607.21606},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2607.21606},
+  pdf={https://arxiv.org/pdf/2607.21606},
+  website={https://debottam-dutta7.github.io/tilt_web/},
+  selected={false},
+  thumbnail={thumb_pushf.png},
+  category={Generative Modeling and Sampling},
+  tldr={We present TILT (Test-time model-Intrinsic reward aLignment via Tilting), a training-free framework that <span class="hl">poses composition in diffusion as an intrinsic reward alignment problem</span>. The reward is <span class="hl">modality agnostic</span>: the same reward works across modalities such as image and audio, obviating the need for externally trained reward models. It also yields a closed-form target under a variational approximation, realizable through standard diffusion sampling, and is interpretable, making it amenable to preference-based modifications.}
+}
+
+@inproceedings{dutta2026can,
   abbr={ICML Workshop},
-  title={TILT: Test-Time Reward Alignment via Distribution Tilting for Compositional Generation},
+  title={Can Intrinsic Rewards Enable Compositional Alignment in Diffusion?},
   author={Debottam Dutta and Jaehoon Hahm and Jianchong Chen and Romit Roy Choudhury},
   year={2026},
-  booktitle={ICML 2026 Workshop on Structured Probabilistic Inference \& Generative Modeling (SPIGM)},
+  booktitle={ICML 2026 Workshop on Structured Probabilistic Inference {\&} Generative Modeling},
   note={ICML 2026 Workshop on Structured Probabilistic Inference \& Generative Modeling (SPIGM)},
-  url={https://sinrg.csl.illinois.edu/papers/tilt_workshop_2026.pdf},
-  pdf={https://sinrg.csl.illinois.edu/papers/tilt_workshop_2026.pdf},
+  url={https://openreview.net/forum?id=jRPdGi83MI},
+  pdf={https://openreview.net/pdf?id=jRPdGi83MI},
   selected={true},
   thumbnail={tilt.png},
   category={Generative Modeling and Sampling},
-  tldr={<span class="hl">We introduce</span> TILT, a training-free framework that improves compositional text-to-image generation by framing it as a test-time reward alignment problem. Rather than relying on external reward models, we define a "pure-mode" intrinsic reward that favors samples where all concepts are jointly present and show that the reward maximizes Conditional Total Correlation in principle.}
+  tldr={External reward models used to steer text-to-image generation are not tailored to what the generator has learned. <span class="hl">We ask</span>: can a model that composes poorly tell apart its own good and bad samples, and can that model-intrinsic signal steer it away from compositional failures?}
 }
 
 @misc{dutta2026steerawaymodecollisions,
